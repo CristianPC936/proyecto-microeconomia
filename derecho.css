@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+#title img{
+    width: 150px;
+    height: 120px;
+    align-items: center;
+}
+
+body{
+    background: url(fondo2.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+
+}
+
+header{
+	width: 100%;
+}
+
+.navegacion{
+	width: 1000px;
+	margin: 30px auto;
+    background: #fff;
+    font: oblique bold 120% cursive;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.button{
+    width: 200px;
+    padding: 6px;
+    background: gray;
+    border-style: none;
+    border-radius: 8px;
+    color: white;
+    margin-top: 10px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+/*imagenes columnas*/
+
+#blog h3, h4, h1,form,img {
+    text-align: center;
+}
+
+#blog .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor h4, h1{
+    color: white;
+}
+
+#blog article {
+    margin: 30px;
+}
+
+#blog img {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+}
+
+
+/*Video*/
+.convideo{
+width: 100%;
+max-width: 1000px;
+margin: auto;
+padding: 60px;
+margin-top: 10px;
+border-top: 6px solid;
+
+}
+
+.video{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.convideo p{
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+
+
+
+/*footer sociales*/
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    background: whitesmoke;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media (min-width:768px) { 
+    .sociales {
+        width: auto;
+    }
+    
+    footer .contenedor {
+        justify-content: center;
+    }
+
+}
+
+.tsocial{
+    text-align: center;
+    background: whitesmoke;
+    color:  rgb(0, 42, 97);
+}

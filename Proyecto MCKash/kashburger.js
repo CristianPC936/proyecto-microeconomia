@@ -1,0 +1,1 @@
+alert('Bienvenido a Kash Burgers, las mejores Hamburgesas, dale gusto a tu paladar!');
