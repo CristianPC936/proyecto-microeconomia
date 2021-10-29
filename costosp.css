@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+#title img{
+    width: 150px;
+    height: 120px;
+    align-items: center;
+}
+
+body{
+    background: url(costoP.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+
+}
+
+header{
+	width: 100%;
+}
+
+.navegacion{
+	width: 1000px;
+	margin: 30px auto;
+    background: #fff;
+    font: oblique bold 120% cursive;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.button{
+    width: 200px;
+    padding: 6px;
+    background: gray;
+    border-style: none;
+    border-radius: 8px;
+    color: white;
+    margin-top: 10px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+/*imagenes columnas*/
+
+#blog h3, h4, h1,form,img {
+    text-align: center;
+    
+}
+
+#blog .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.contenedor h4, h1{
+    color: white;
+    font-size: 200%;
+
+}
+
+#blog article {
+    margin: 30px;
+}
+
+#blog img {
+    width: 300%;
+    max-width: 480px;
+    justify-content: center;
+}
+
+
+/*Video*/
+.convideo{
+width: 100%;
+max-width: 1000px;
+margin: auto;
+padding: 60px;
+margin-top: 10px;
+border-top: 6px solid;
+
+}
+
+.video{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.convideo p{
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+
+
+
+/*footer sociales*/
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    background: whitesmoke;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media (min-width:768px) { 
+    .sociales {
+        width: auto;
+    }
+    
+    footer .contenedor {
+        justify-content: center;
+    }
+
+}
+
+.tsocial{
+    text-align: center;
+    background: whitesmoke;
+    color:  rgb(0, 42, 97);
+}
+
+/*boton flotante whats*/
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
